@@ -1,0 +1,44 @@
+.TH hsh 1 "July 17, 2023" "hsh Usage Commands Manual"
+
+.SH NAME
+hsh - Simple Shell: A command line interpreter or shell.
+
+.SH SYNOPSIS
+\fBhsh\fR
+
+.SH DESCRIPTION
+The hsh (Simple Shell) program is a command line interpreter that allows users to interact with the system by entering commands from the terminal or files. It reads and executes these commands, providing a convenient way to perform various operations.
+
+.SH OVERVIEW
+The hsh shell acts as an interface between the user and the operating system. It interprets the commands entered by the user and executes them accordingly. By using the hsh shell, users can navigate through directories, run programs, manipulate files, and perform other system-related tasks.
+
+.SH COMPILATION
+To compile the hsh shell, you can use the GNU Compiler Collection (GCC) with the specified flags. The example command for compilation is as follows:
+.P
+.RS
+.B $ gcc -Wall -Werror -Wextra -pedantic *.c -o hsh
+.P
+.RE
+After successful compilation, the shell can be executed by running the following command:
+.P
+.RS
+.B $ ./hsh
+
+.SH BUILTINS
+The hsh shell supports two built-in commands:
+
+.B exit
+The "exit" command allows users to exit the shell and return to the previous environment.
+
+.B env
+The "env" command lists the current environment variables, providing information about the system's configuration.
+
+.SH SEE ALSO
+.B Bash(1)
+The hsh shell is similar to the Bash shell, which is a widely used command interpreter in Unix-like operating systems.
+
+.SH BUGS
+No known bugs have been identified in the hsh shell.
+
+.SH AUTHORS
+The hsh shell was developed by Lencho Ajema and Beka Gerbaba.
