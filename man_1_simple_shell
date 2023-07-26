@@ -1,4 +1,4 @@
-.TH hsh 1 "July 17, 2023" "hsh Usage Commands Manual"
+.TH hsh 1 "July 20, 2023" "hsh Usage Commands Manual"
 
 .SH NAME
 hsh - Simple Shell: A command line interpreter or shell.
@@ -32,6 +32,31 @@ The "exit" command allows users to exit the shell and return to the previous env
 
 .B env
 The "env" command lists the current environment variables, providing information about the system's configuration.
+
+.SH COMMAND LINE SYNTAX
+The hsh shell follows a typical command line syntax where commands are executed in the form of:
+.P
+.RS
+.B $ command [options] [arguments]
+.P
+.RE
+Multiple commands can be executed on a single line by separating them using a semicolon.
+
+.SH REDIRECTION
+The hsh shell supports input and output redirection. Users can redirect standard input and output streams using the following symbols:
+.P
+.RS
+.B > : Redirect standard output to a file.
+.B >> : Append standard output to a file.
+.B < : Redirect standard input from a file.
+.P
+.RE
+
+.SH PIPES
+The hsh shell also allows for command pipelining using the pipe symbol (|). It enables users to send the output of one command as the input to another command.
+
+.SH BACKGROUND EXECUTION
+Commands can be executed in the background by adding an ampersand (&) at the end of the command. This allows users to continue using the shell while the command is running in the background.
 
 .SH SEE ALSO
 .B Bash(1)
